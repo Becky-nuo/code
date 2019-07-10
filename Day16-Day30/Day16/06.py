@@ -6,7 +6,7 @@ class A:
 
 
     
-    def aa(self):
+    def say(self):
         print("say AAA!")
 
 
@@ -15,7 +15,7 @@ class B:
         print("bb")
 
 
-    def aa(self):
+    def say(self):
         print("say BBB!")
 
 
@@ -25,12 +25,12 @@ class C(B,A):
         print("cc")
 
 
-c=C()
+c = C()
 c.cc()
 c.bb()
 c.aa()
-print(C.mro)  #打印类的层次结构
-c.sasay() #解释器是寻找的方法是:“从走到右”的方式寻找。
+print(C.mro())  #打印类的层次结构
+c.say() #解释器是寻找的方法是:“从走到右”的方式寻找。
 
 
 
