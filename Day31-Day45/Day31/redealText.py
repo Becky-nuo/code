@@ -2,6 +2,8 @@
 
 import re
 
+
+#正则对字符串的清洗
 def textParse(str_doc):
     '''正则过滤掉特殊符号、标点、英文、数字等
     r1 - '[a-zA-Z0-9'!"#$%&\'()*+,-./:：;：|<=>?@,-。?、"]^_'{|}~]+'
@@ -24,7 +26,7 @@ def readFile(path):
 
 
 if __name__ == '__main__':
-    path = r'../文本路径'
+    path = r'../文本路径'   #读取文本
     str_doc = readFile(path)
     #print(str_doc)
 
@@ -32,6 +34,8 @@ if __name__ == '__main__':
     '''数据清洗'''
     res = textParse(str_doc)
     print(res)
+
+    
 
 '''
     DESC:正则清洗文本数据
